@@ -1,5 +1,3 @@
-# literals: abc1234
-# metacharacters: *+.?
 # Grammar:
 # literal -> ('a' | '1' | '.') | '(' exp ')''
 # postfix -> literal '*+?'*
@@ -7,9 +5,6 @@
 # or -> postfix ('|' postfix)*
 # exp -> or
 
-# The algorithm:
-# for a literal just add the character to the fragment on top of the stack
-# for metacharacter, pop from the stack and modify
 
 from typing import Callable, Optional
 
